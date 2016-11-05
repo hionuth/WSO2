@@ -6,7 +6,12 @@
       <log level="full">
         <property name="STATUS" value="----Received---"/>
       </log>
-      <send/>
+      <send>
+        <endpoint>
+          <wsdl port="CurrencyConvertorSoap" service="CurrencyConvertor"
+            trace="disable" uri="http://www.webservicex.net/CurrencyConvertor.asmx?WSDL&#xa;"/>
+        </endpoint>
+      </send>
     </inSequence>
     <outSequence>
       <log level="full">
