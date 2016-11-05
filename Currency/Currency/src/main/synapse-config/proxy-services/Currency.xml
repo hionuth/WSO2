@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="Currency" startOnLoad="true" trace="disable"
+  transports="https http" xmlns="http://ws.apache.org/ns/synapse">
+  <target>
+    <inSequence>
+      <log level="full">
+        <property name="STATUS" value="----Received---"/>
+      </log>
+      <send/>
+    </inSequence>
+    <outSequence>
+      <log level="full">
+        <property name="STATUS" value="----Received---"/>
+      </log>
+      <send/>
+    </outSequence>
+    <faultSequence>
+      <makefault version="soap11">
+        <code value="soap11Env:Server" xmlns:soap11Env="http://schemas.xmlsoap.org/soap/envelope/"/>
+        <reason expression="get-property('ERROR_MESSAGE')"/>
+        <role/>
+      </makefault>
+      <log level="full">
+        <property name="STATUS" value="----Fault---"/>
+        <property expression="get-property('ERROR_MESSAGE')" name="message"/>
+        <property expression="get-property('ERROR_CODE')" name="code"/>
+        <property expression="get-property('ERROR_DETAIL')" name="detail"/>
+      </log>
+      <send/>
+    </faultSequence>
+  </target>
+  <publishWSDL uri="http://www.webservicex.net/CurrencyConvertor.asmx?WSDL"/>
+</proxy>
