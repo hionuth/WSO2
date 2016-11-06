@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="CurrencyConvertor_endpoint" xmlns="http://ws.apache.org/ns/synapse">
+  <wsdl port="CurrencyConvertorSoap" service="CurrencyConvertor"
+    trace="disable" uri="http://www.webservicex.net/CurrencyConvertor.asmx?WSDL"/>
+</endpoint>

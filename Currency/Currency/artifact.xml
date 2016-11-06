@@ -2,4 +2,7 @@
     <artifact name="Currency" groupId="com.example.Currency.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/Currency.xml</file>
     </artifact>
+    <artifact name="CurrencyConvertor_endpoint" groupId="com.example.Currency.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/CurrencyConvertor_endpoint.xml</file>
+    </artifact>
 </artifacts>

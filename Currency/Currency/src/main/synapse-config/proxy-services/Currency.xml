@@ -7,10 +7,7 @@
         <property name="STATUS" value="----Received---"/>
       </log>
       <send>
-        <endpoint>
-          <wsdl port="CurrencyConvertorSoap" service="CurrencyConvertor"
-            trace="disable" uri="http://www.webservicex.net/CurrencyConvertor.asmx?WSDL"/>
-        </endpoint>
+        <endpoint key="CurrencyConvertor_endpoint"/>
       </send>
     </inSequence>
     <outSequence>
