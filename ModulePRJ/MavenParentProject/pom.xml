@@ -8,6 +8,13 @@
   <packaging>pom</packaging>
   <name>MavenParentProject</name>
   <description>MavenParentProject</description>
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Internal repo</name>
+      <url>file:///var/jenkins_home/workspace</url>
+    </repository>
+  </distributionManagement>
   <modules>
     <module>../../Currency/Currency</module>
     <module>../../Currency_CAR/Currency_CAR</module>
