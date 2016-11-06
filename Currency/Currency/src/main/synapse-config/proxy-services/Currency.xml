@@ -9,7 +9,7 @@
       <send>
         <endpoint>
           <wsdl port="CurrencyConvertorSoap" service="CurrencyConvertor"
-            trace="disable" uri="http://www.webservicex.net/CurrencyConvertor.asmx?WSDL&#xa;"/>
+            trace="disable" uri="http://www.webservicex.net/CurrencyConvertor.asmx?WSDL"/>
         </endpoint>
       </send>
     </inSequence>
