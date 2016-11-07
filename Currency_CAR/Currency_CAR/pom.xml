@@ -10,10 +10,15 @@
   <description>Currency_CAR</description>
   <distributionManagement>
     <repository>
-      <id>internal.repo</id>
-      <name>Internal repo</name>
-      <url>file:///var/jenkins_home/workspace</url>
+      <id>central</id>
+      <name>852a4029944b-releases</name>
+      <url>http://192.168.213.129:8081/artifactory/wso2esb</url>
     </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>852a4029944b-snapshots</name>
+      <url>http://192.168.213.129:8081/artifactory/wso2esb</url>
+    </snapshotRepository>
   </distributionManagement>
   <properties>
     <com.example.Currency.endpoint_._CurrencyConvertor_endpoint>capp/EnterpriseServiceBus</com.example.Currency.endpoint_._CurrencyConvertor_endpoint>
