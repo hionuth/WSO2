@@ -14,6 +14,11 @@
       <name>Internal repo</name>
       <url>file:///var/jenkins_home/workspace</url>
     </repository>
+    <repository>
+        <id>central</id>
+        <name>852a4029944b-releases</name>
+        <url>http://192.168.213.129:8081/artifactory/wso2esb</url>
+    </repository>
     <snapshotRepository>
       <id>snapshots</id>
       <name>852a4029944b-snapshots</name>
