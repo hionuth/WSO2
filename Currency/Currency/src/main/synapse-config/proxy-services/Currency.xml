@@ -4,7 +4,7 @@
   <target>
     <inSequence>
       <log level="full">
-        <property name="STATUS" value="----Received---"/>
+        <property name="STATUS" value="----Received with success---"/>
       </log>
       <send>
         <endpoint key="CurrencyConvertor_endpoint"/>
