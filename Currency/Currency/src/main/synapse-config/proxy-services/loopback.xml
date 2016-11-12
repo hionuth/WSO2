@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="loopback" startOnLoad="true" trace="disable"
+  transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+  <target>
+    <inSequence>
+      <log level="full">
+        <property name="STATUS" value="----Received message---"/>
+      </log>
+      <loopback/>
+    </inSequence>
+    <outSequence>
+      <log level="full">
+        <property name="STATUS" value="----Received message---"/>
+      </log>
+      <respond/>
+    </outSequence>
+    <faultSequence/>
+  </target>
+</proxy>
