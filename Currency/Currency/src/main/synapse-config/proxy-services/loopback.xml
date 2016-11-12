@@ -6,6 +6,14 @@
       <log level="full">
         <property name="STATUS" value="----Received message---"/>
       </log>
+      <payloadFactory media-type="xml">
+        <format>
+          <inline xmlns="">
+            <response>respuns</response>
+          </inline>
+        </format>
+        <args/>
+      </payloadFactory>
       <loopback/>
     </inSequence>
     <outSequence>
