@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example.Currency_CAR</groupId>
   <artifactId>Currency_CAR</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>carbon/application</packaging>
   <name>Currency_CAR</name>
   <description>Currency_CAR</description>
