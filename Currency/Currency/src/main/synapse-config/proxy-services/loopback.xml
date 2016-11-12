@@ -21,7 +21,7 @@
     </inSequence>
     <outSequence>
       <log level="full">
-        <property name="STATUS" value="----Received message----"/>
+        <property name="STATUS" value="----Received message---"/>
       </log>
       <respond/>
     </outSequence>
