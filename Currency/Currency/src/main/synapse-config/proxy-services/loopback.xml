@@ -14,7 +14,7 @@
           </inline>
         </format>
         <args>
-          <arg evaluator="xml" expression="//ionut/text()" xmlns:cre="http://ro.test.com"/>
+          <arg evaluator="xml" expression="//ionut" xmlns:cre="http://ro.test.com"/>
         </args>
       </payloadFactory>
       <loopback/>
