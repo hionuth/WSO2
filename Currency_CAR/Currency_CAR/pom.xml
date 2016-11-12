@@ -30,19 +30,19 @@
     <dependency>
       <groupId>com.example.Currency.proxy-service</groupId>
       <artifactId>Currency</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <type>xml</type>
     </dependency>
     <dependency>
       <groupId>com.example.Currency.endpoint</groupId>
       <artifactId>CurrencyConvertor_endpoint</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <type>xml</type>
     </dependency>
     <dependency>
       <groupId>com.example.Currency.proxy-service</groupId>
       <artifactId>loopback</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
       <type>xml</type>
     </dependency>
   </dependencies>
