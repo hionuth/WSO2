@@ -9,10 +9,13 @@
       <payloadFactory media-type="xml">
         <format>
           <inline xmlns="">
-            <response>respuns</response>
+            <sent>$1</sent>
+            <response>raspuns</response>
           </inline>
         </format>
-        <args/>
+        <args>
+          <arg evaluator="xml" expression="//ionut/text()" xmlns:cre="http://ro.test.com"/>
+        </args>
       </payloadFactory>
       <loopback/>
     </inSequence>
