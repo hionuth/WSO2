@@ -8,6 +8,18 @@
   <packaging>carbon/application</packaging>
   <name>SchimbValutar</name>
   <description>SchimbValutar</description>
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>852a4029944b-releases</name>
+      <url>http://192.168.213.129:8081/artifactory/wso2esb</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>852a4029944b-snapshots</name>
+      <url>http://192.168.213.129:8081/artifactory/wso2esb</url>
+    </snapshotRepository>
+  </distributionManagement>
   <properties>
     <com.example.Currency.endpoint_._CursValutar_endpoint>capp/EnterpriseServiceBus</com.example.Currency.endpoint_._CursValutar_endpoint>
     <com.example.Currency.proxy-service_._CursValutar>capp/EnterpriseServiceBus</com.example.Currency.proxy-service_._CursValutar>
@@ -101,10 +113,10 @@
         <configuration>
           <carbonServers>
             <CarbonServer>
-              <trustStorePath>${basedir}/src/main/resources/security/wso2carbon.jks</trustStorePath>
+              <trustStorePath>/var/jenkins_home/workspace/wso2carbon.jks</trustStorePath>
               <trustStorePassword>wso2carbon</trustStorePassword>
               <trustStoreType>JKS</trustStoreType>
-              <serverUrl>https://localhost:9443</serverUrl>
+              <serverUrl>https://192.168.213.129:9443</serverUrl>
               <userName>admin</userName>
               <password>admin</password>
               <operation>deploy</operation>
