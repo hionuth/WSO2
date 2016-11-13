@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="CursValutar_endpoint" xmlns="http://ws.apache.org/ns/synapse">
+  <wsdl port="CursSoap" service="Curs" trace="disable" uri="http://www.infovalutar.ro/curs.asmx?wsdl"/>
+</endpoint>

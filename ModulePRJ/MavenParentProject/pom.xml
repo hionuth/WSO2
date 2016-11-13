@@ -23,6 +23,7 @@
   <modules>
     <module>../../Currency/Currency</module>
     <module>../../Currency_CAR/Currency_CAR</module>
+    <module>../../SchimbValutar</module>
   </modules>
   <build>
     <plugins>

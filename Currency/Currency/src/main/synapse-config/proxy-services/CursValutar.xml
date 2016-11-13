@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="CursValutar" startOnLoad="true" trace="disable"
+  transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+  <target>
+    <inSequence>
+      <log/>
+      <send>
+        <endpoint key="CursValutar_endpoint"/>
+      </send>
+    </inSequence>
+    <outSequence>
+      <log/>
+      <send/>
+    </outSequence>
+    <faultSequence>
+      <log/>
+      <respond/>
+    </faultSequence>
+  </target>
+  <publishWSDL uri="http://www.infovalutar.ro/curs.asmx?wsdl"/>
+</proxy>

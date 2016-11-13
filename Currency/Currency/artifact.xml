@@ -8,4 +8,10 @@
     <artifact name="loopback" groupId="com.example.Currency.proxy-service" version="1.0.1" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/loopback.xml</file>
     </artifact>
+    <artifact name="CursValutar_endpoint" groupId="com.example.Currency.endpoint" version="1.0.1" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/CursValutar_endpoint.xml</file>
+    </artifact>
+    <artifact name="CursValutar" groupId="com.example.Currency.proxy-service" version="1.0.1" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/CursValutar.xml</file>
+    </artifact>
 </artifacts>
